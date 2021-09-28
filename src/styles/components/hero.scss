@@ -1,0 +1,42 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-family: var(--font-h1);
+            font-size: var(--font-size-h1);
+        }
+        h2 {
+            font-family: var(--font-h2);
+            font-size: var(--font-size-h2);
+            white-space: nowrap;
+        }
+
+        .btnHero {
+            background: var(--color-degrader);
+            border: none;
+            border-radius: 11px;
+            color: var(--color-white);
+            font-family: var(--font-h2);
+            font-size: var(--font-size-btn);
+            padding: 25px 30px;
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
+
+            .coinBtn {
+                position: absolute;
+                top: 5px;
+                right: 2px;
+            }
+        }
+    }
+}

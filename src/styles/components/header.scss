@@ -1,0 +1,33 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 93px;
+    z-index: 2;
+    background-color: var(--color-secondary);
+
+    .header-wrapper {
+        height: 100%;
+        margin: 0 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a.logo {
+            font-family: var(--font-p);
+            font-size: var(--font-size-p);
+        }
+
+        .liste-nav {
+            display: flex;
+
+            li {
+                margin: 0 10px;
+                list-style: none;
+
+                a {
+                    font-family: var(--font-h2);
+                    font-size: var(--font-size-nav);
+                }
+            }
+        }
+    }
+}
