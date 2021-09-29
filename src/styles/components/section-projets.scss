@@ -1,4 +1,8 @@
+
+
 .mes-projets{
+    height: 100%;
+    position: relative;
     h1{
         text-align: center;
         margin-top: 200px;
@@ -41,6 +45,10 @@
                     padding-right: 10px;
                 }
             }
+
+        button{
+            margin-top: 15px;
+        }
     }
 }
 }

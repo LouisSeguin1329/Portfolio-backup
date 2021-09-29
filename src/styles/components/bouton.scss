@@ -1,0 +1,22 @@
+
+
+button{
+    background: var(--color-degrader);
+    border: none;
+    border-radius: 11px;
+    color: var(--color-white);
+    font-family: var(--font-h2);
+    font-size: var(--font-size-btn);
+    padding: 20px 25px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    font-family:  'Manrope', sans-serif;;
+
+    
+    .coinBtn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}

@@ -1,6 +1,7 @@
 //FONTS
 
 @import url('https://fonts.googleapis.com/css2?family=Kotta+One&family=Manjari:wght@100;400;700&family=Montserrat:wght@400;500;600;700&family=Quando&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -30,6 +31,7 @@
 @import 'components/hero.scss';
 @import 'components/header.scss';
 @import 'components/section-projets.scss';
+@import 'components/bouton.scss';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
