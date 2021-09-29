@@ -1,0 +1,54 @@
+.mes-projets{
+    h1{
+        text-align: center;
+        margin-top: 200px;
+    }
+
+   .le-projet-gauche{
+    display: flex;
+
+    .imgprojets{
+        width: 33%;
+        object-fit: contain;
+    }
+
+    .textProjets{
+        margin-left: 65px;
+
+        .titre-projets{
+            display: flex;
+            align-items: center;
+
+            h2{
+                white-space:nowrap;
+                border-right: solid 3px black;
+                margin-right: 20px;
+                margin-bottom: 0;
+                padding-right: 20px;
+                margin-top: 15px;
+                
+            }
+           
+        } 
+        
+        h4{
+                margin-top: 0;
+            }
+
+            .logo-projet{
+                .logo-logiciel-projet{
+                    max-width: 69px;
+                    padding-right: 10px;
+                }
+            }
+    }
+}
+}
+
+
+.wrapper-page-projets{
+    margin: 0 69px;
+}
+
+
+
