@@ -1,62 +1,145 @@
-
-
-.mes-projets{
+.mes-projets {
     height: 100%;
     position: relative;
-    h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h1 {
         text-align: center;
         margin-top: 200px;
     }
 
-   .le-projet-gauche{
-    display: flex;
+    .le-projet-gauche {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 150px;
 
-    .imgprojets{
-        width: 33%;
-        object-fit: contain;
-    }
+        .imgprojets {
+            width: 40%;
+            object-fit: contain;
+        }
 
-    .textProjets{
-        margin-left: 65px;
+        .textProjets {
+            margin-left: 65px;
 
-        .titre-projets{
-            display: flex;
-            align-items: center;
+            .titre-projets {
+                display: flex;
+                align-items: center;
 
-            h2{
-                white-space:nowrap;
-                border-right: solid 3px black;
-                margin-right: 20px;
-                margin-bottom: 0;
-                padding-right: 20px;
-                margin-top: 15px;
-                
+                h2 {
+                    white-space: nowrap;
+                    border-right: solid 3px black;
+                    margin-right: 20px;
+                    margin-bottom: 0;
+                    padding-right: 20px;
+                    margin-top: 15px;
+                }
             }
-           
-        } 
-        
-        h4{
+
+            h4 {
                 margin-top: 0;
             }
 
-            .logo-projet{
-                .logo-logiciel-projet{
+            .logo-projet {
+                .logo-logiciel-projet {
                     max-width: 69px;
                     padding-right: 10px;
                 }
             }
 
-        button{
-            margin-top: 15px;
+            button {
+                margin-top: 15px;
+            }
         }
     }
-}
+
+    .le-projet-droite {
+        display: flex;
+        justify-content: right;
+        margin-top: 150px;
+
+        .imgprojets {
+            width: 40%;
+            object-fit: contain;
+        }
+
+        .textProjets {
+            margin-right: 65px;
+
+            .titre-projets {
+                display: flex;
+                align-items: center;
+
+                h2 {
+                    border-right: solid 3px black;
+                    margin-right: 20px;
+                    margin-bottom: 0;
+                    padding-right: 20px;
+                    margin-top: 15px;
+                }
+                .titre-wrap {
+                    // white-space: ;
+                    max-width: 700px;
+                }
+            }
+
+            h4 {
+                margin-top: 0;
+            }
+
+            .logo-projet {
+                .logo-logiciel-projet {
+                    max-width: 69px;
+                    padding-right: 10px;
+                }
+            }
+
+            button {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .champi1 {
+        background-image: url(../../assets/images/Champignon1.svg);
+        width: 200px;
+        height: 325px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 1500px;
+        left: 0;
+    }
+    .champi2 {
+        background-image: url(../../assets/images/Champignon2.svg);
+        width: 170px;
+        height: 270px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 2500px;
+        right: 0;
+    }
+    .champi3 {
+        background-image: url(../../assets/images/Champignon1.svg);
+        width: 200px;
+        height: 325px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 500px;
+        right: 0;
+        transform: scaleX(-1);
+    }
+    .champi4 {
+        background-image: url(../../assets/images/Champignon2.svg);
+        width: 170px;
+        height: 270px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 1300px;
+        left: 0;
+        transform: scaleX(-1);
+    }
 }
 
-
-.wrapper-page-projets{
+.wrapper-page-projets {
     margin: 0 69px;
 }
-
-
-
