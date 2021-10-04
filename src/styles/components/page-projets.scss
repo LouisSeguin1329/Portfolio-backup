@@ -8,6 +8,10 @@
         margin-top: 200px;
     }
 
+    h3{
+        white-space: nowrap;
+    }
+
     .le-projet-gauche {
         display: flex;
         justify-content: left;
@@ -106,7 +110,7 @@
         height: 325px;
         background-repeat: no-repeat;
         position: absolute;
-        top: 1500px;
+        top: 1800px;
         left: 0;
     }
     .champi2 {
@@ -115,7 +119,7 @@
         height: 270px;
         background-repeat: no-repeat;
         position: absolute;
-        top: 2500px;
+        top: 1200px;
         right: 0;
     }
     .champi3 {
@@ -134,7 +138,7 @@
         height: 270px;
         background-repeat: no-repeat;
         position: absolute;
-        bottom: 1300px;
+        bottom: 700px;
         left: 0;
         transform: scaleX(-1);
     }

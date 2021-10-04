@@ -1,0 +1,43 @@
+.a-propos-wrapper{
+    margin: 0 140px;
+    
+    .introduction{
+        position: relative;
+    display: flex;
+
+    .txt-intro{
+        padding-top: 150px;
+        max-width: 748px;
+
+        h2{
+            margin-bottom: 15px;
+        }
+
+        p.bio{
+            margin-top: 0;
+            max-width: 650px;
+        }
+
+        .qualite1{
+            color: #EC014D;
+        }
+        .qualite2{
+            color: #5407DE;
+        }
+        .qualite3{
+            color: #10A3EF;
+        }
+    }
+
+    .img-intro{
+        position: absolute;
+        top: 0;
+        right: -150px;
+    }
+}
+
+    .mes-competence{
+        display: flex;
+    }
+}
+
