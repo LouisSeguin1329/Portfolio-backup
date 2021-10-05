@@ -9,8 +9,7 @@
     z-index: -1;
 }
 
-
-.blob-page-projet{
+.blob-page-projet {
     background-image: url(../../assets/images/blob-page-projets.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,5 +19,28 @@
     top: 0;
     left: 0;
     z-index: -1;
-    
+}
+
+.blob-a-propos {
+    background-image: url(../../assets/images/blob-a-propos.png);
+    width: 787px;
+    height: 776px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: -200px;
+
+    z-index: -1;
+}
+
+.blob-contact {
+    background-image: url(../../assets/images/blob-contact.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    z-index: -1;
 }

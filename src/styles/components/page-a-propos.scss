@@ -1,75 +1,70 @@
-.contenu-a-propos{
+.contenu-a-propos {
     padding-bottom: 300px;
     position: relative;
 }
 
-.a-propos-wrapper{
+.a-propos-wrapper {
     margin: 0 140px;
-  
-    
-    .introduction{
+
+    .introduction {
         position: relative;
-    display: flex;
+        display: flex;
 
-    .txt-intro{
-        padding-top: 150px;
-        max-width: 748px;
+        .txt-intro {
+            padding-top: 150px;
+            max-width: 748px;
 
-        h2{
-            margin-bottom: 15px;
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            p.bio {
+                margin-top: 0;
+                max-width: 650px;
+            }
+
+            .qualite1 {
+                color: #ec014d;
+            }
+            .qualite2 {
+                color: #5407de;
+            }
+            .qualite3 {
+                color: #10a3ef;
+            }
         }
 
-        p.bio{
-            margin-top: 0;
-            max-width: 650px;
-        }
-
-        .qualite1{
-            color: #EC014D;
-        }
-        .qualite2{
-            color: #5407DE;
-        }
-        .qualite3{
-            color: #10A3EF;
+        .img-intro {
+            position: absolute;
+            top: 0;
+            right: -150px;
         }
     }
 
-    .img-intro{
-        position: absolute;
-        top: 0;
-        right: -150px;
-    }
-}
-
-    .mes-competence{
+    .mes-competence {
         margin-top: 150px;
         max-width: 1030px;
         display: flex;
         justify-content: space-between;
-
     }
 
-
-    .mes-loisirs{
+    .mes-loisirs {
         margin-top: 50px;
-        h4{
+        h4 {
             margin-bottom: 10px;
         }
-       .liste-loisirs{
-           margin-top: 10px;
-        list-style-type: none;
-        padding: 0;
+        .liste-loisirs {
+            margin-top: 10px;
+            list-style-type: none;
+            padding: 0;
 
-           .loisirs{
-        font-size: var(--font-size-h4);
-                 }
-       }
-        
+            .loisirs {
+                font-size: var(--font-size-h4);
+            }
+        }
     }
 
-   
-    .shroom{
+    .shroom {
         background-image: url(../../assets/images/shroom1.png);
         width: 410px;
         height: 400px;
@@ -79,26 +74,13 @@
         right: 300px;
     }
 
-    .shroom2{
+    .shroom2 {
         background-image: url(../../assets/images/shroom2.png);
-        width: 400px ;
+        width: 400px;
         height: 580px;
         background-repeat: no-repeat;
         position: absolute;
         bottom: 0;
         right: -140px;
     }
-
-    .blob-a-propos{
-        background-image: url(../../assets/images/blob-a-propos.png);
-        width:787px;
-        height: 776px;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0px;
-        left: -200px;
-
-        z-index: -1;
-    }
 }
-
