@@ -1,0 +1,55 @@
+.contact {
+    font-size: 20px;
+    h1 {
+        text-align: center;
+    }
+
+    .contenu-contact {
+        display: flex;
+        justify-content: space-between;
+
+        form {
+            fieldset {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: none;
+
+                .input {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .input_element {
+                        border-image: solid 3px var(--color-degrader);
+                        padding: 16px 25px;
+                        width: 540px;
+                        border-radius: 13px;
+                    }
+                }
+
+                .btn-form {
+                    text-align: center;
+                    max-width: 122px;
+                }
+            }
+        }
+
+        .mes-reseaux-sociaux {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-height: 493px;
+            height: 100%;
+            .rs {
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+
+                .logo-rs {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
