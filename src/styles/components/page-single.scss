@@ -1,25 +1,106 @@
-.intro-single {
-    display: flex;
+.section-single-projet {
+    position: relative;
+    padding-top: 100px;
+    .wrapper-single {
+        margin: 0 65px;
 
-    .competences-utilise {
-        display: flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
 
-        .logiciel {
+        h1 {
+            text-align: center;
+        }
+
+        .intro-single {
             display: flex;
-            justify-content: center;
 
-            .un-logiciel {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+            .video {
+                width: 50vw;
+            }
+
+            .txt-intro {
+                margin-left: 50px;
+                width: 50vw;
+                .competences-utilise {
+                    max-width: 675px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .logiciel {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .un-logiciel {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    .langage {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                h3 {
+                    margin: 15px 0 0 0;
+                }
+
+                .txt-asset {
+                    font-size: 18px;
+                }
+
+                p {
+                    margin: 15px 0;
+                }
+            }
+
+            p.titre-competence {
+                font-size: 24px;
+                margin: 5px 0;
+            }
+            .logo-competences {
+                max-width: 55px;
+            }
+        }
+
+        .description-projet {
+            margin: 0 auto;
+            max-width: 1233px;
+            .txt-description-projet {
+                font-size: 24px;
+            }
+
+            .gras {
+                font-weight: 700;
             }
         }
     }
 
-    .titre-competence {
-        font-size: 24px;
-    }
-    .logo-competences {
-        max-width: 55px;
+    .section-single {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 100px 0;
+
+        li {
+            font-size: 24px;
+        }
+
+        .img-single-section {
+            max-width: 990px;
+        }
+
+        .txt-section-single {
+            margin: 0 15px;
+        }
+        .txt4 {
+            max-width: 430px;
+        }
     }
 }
