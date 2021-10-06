@@ -1,6 +1,6 @@
 
 
-button{
+button {
     background: var(--color-degrader);
     border: none;
     border-radius: 11px;
@@ -20,3 +20,11 @@ button{
         right: 5px;
     }
 }
+
+header button.header__toggle {
+    background: transparent;
+}
+
+
+
+

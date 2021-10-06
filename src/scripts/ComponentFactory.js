@@ -1,5 +1,5 @@
 //import Carousel from './components/Carousel';
-//import Header from './components/Header';
+import Header from './components/Header';
 //import Modal from './components/Modal';
 //import Scrolly from './components/Scrolly';
 //import Accordeon from './components/Accordeon';
@@ -11,7 +11,7 @@ export default class ComponentFactory {
     this.componentInstances = [];
     this.componentList = {
       //  Carousel,
-      //  Header,
+        Header,
       // Modal,
       // Scrolly,
       // Accordeon,

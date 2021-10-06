@@ -12,15 +12,13 @@
 
     <body>
         <div class="site-container">
-            <header class="header">
+            <header class="header" data-component="Header" data-scroll-limit="0.15" data-auto-hide="true">
                 <div class="header-wrapper">
                     <a href="index.html" class="logo">Louis Séguin</a>
                     <nav class="nav-primary">
                         <ul class="liste-nav">
                             <li>
-                                <a href="index.html" class="nav-primary_item"
-                                    >Accueil</a
-                                >
+                                <a href="" class="nav-primary_item">Accueil</a>
                             </li>
                             <li>
                                 <a
@@ -45,9 +43,11 @@
                             </li>
                         </ul>
                     </nav>
+                    <button class="menu-hamburger header__toggle js-toggle">
+                        <img src="assets/images/btn-hamburger.png" alt="">
+                    </button>
                 </div>
             </header>
-
             <section class="section-single-projet">
                 <section class="wrapper-single">
                     <h1>Typo Kinétique</h1>
