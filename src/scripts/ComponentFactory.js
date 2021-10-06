@@ -4,6 +4,7 @@
 //import Scrolly from './components/Scrolly';
 //import Accordeon from './components/Accordeon';
 import Form from './components/Form';
+import Video from './components/Video';
 
 export default class ComponentFactory {
   constructor() {
@@ -14,6 +15,7 @@ export default class ComponentFactory {
       // Modal,
       // Scrolly,
       // Accordeon,
+      Video,
       Form,
     };
     this.init();
