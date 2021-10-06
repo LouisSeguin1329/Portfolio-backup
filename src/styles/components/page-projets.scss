@@ -16,10 +16,18 @@
     h1 {
         text-align: center;
         margin-top: 200px;
+
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: 36px;
+        }
     }
 
     h3 {
         white-space: nowrap;
+
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: 12px;
+        }
     }
 
     .le-projet-gauche {
@@ -27,6 +35,10 @@
         justify-content: left;
         align-items: center;
         margin-top: 150px;
+        @media screen and (max-width: $breakpoint-xs) {
+            justify-content: center;
+            align-items: center;
+        }
 
         .imgprojets {
             width: 40%;
@@ -36,9 +48,16 @@
         .textProjets {
             margin-left: 65px;
 
+            @media screen and (max-width: $breakpoint-xs) {
+                margin-left:0;
+            }
+
             .titre-projets {
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: $breakpoint-xs) {
+                    flex-direction: column;
+                }
 
                 h2 {
                     white-space: nowrap;
@@ -47,11 +66,21 @@
                     margin-bottom: 0;
                     padding-right: 20px;
                     margin-top: 15px;
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        font-size: 24px;
+                        border-right: none;
+                        border-bottom:solid 3px black ;
+                    }
                 }
             }
 
             h4 {
                 margin-top: 0;
+
+                @media screen and (max-width: $breakpoint-xs) {
+                   font-size: 14px;
+                }
             }
 
             .logo-projet {
@@ -76,17 +105,33 @@
         justify-content: right;
         margin-top: 150px;
 
+        @media screen and (max-width: $breakpoint-xs) {
+            justify-content: center;
+            align-items: center;
+        }
+        
+
         .imgprojets {
             width: 40%;
             object-fit: contain;
+            @media screen and (max-width: $breakpoint-xs) {
+                order: 1;
+            }
         }
 
         .textProjets {
+            @media screen and (max-width: $breakpoint-xs) {
+                order: 2;
+                margin-right: 0;
+            }
             margin-right: 65px;
 
             .titre-projets {
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: $breakpoint-xs) {
+                    flex-direction: column;
+                }
 
                 h2 {
                     border-right: solid 3px black;
@@ -94,6 +139,12 @@
                     margin-bottom: 0;
                     padding-right: 20px;
                     margin-top: 15px;
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        font-size: 24px;
+                        border-right: none;
+                        border-bottom:solid 3px black ;
+                    }
                 }
                 .titre-wrap {
                     // white-space: ;
@@ -103,6 +154,9 @@
 
             h4 {
                 margin-top: 0;
+                @media screen and (max-width: $breakpoint-xs) {
+                    font-size: 14px;
+                 }
             }
 
             .logo-projet {
