@@ -1,0 +1,25 @@
+.intro-single {
+    display: flex;
+
+    .competences-utilise {
+        display: flex;
+
+        .logiciel {
+            display: flex;
+            justify-content: center;
+
+            .un-logiciel {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+
+    .titre-competence {
+        font-size: 24px;
+    }
+    .logo-competences {
+        max-width: 55px;
+    }
+}
