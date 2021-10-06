@@ -39,9 +39,9 @@ header {
 }
 
 button.header__toggle {
-    --bar-width: 30px;
+  /*  --bar-width: 30px;
     --bar-height: 5px;
-    --bar-spacer: 3px;
+    --bar-spacer: 3px;*/
     background-color: transparent;
     border: none;
     outline: none;
@@ -49,11 +49,11 @@ button.header__toggle {
 
     padding: 0;
     position: relative;
-    width: var(--bar-width);
-    height: var(--bar-width);
+   // width: var(--bar-width);
+   // height: var(--bar-width);
     z-index: 10;
 
-    span {
+    /*span {
         background: var(--color-primary);
         border-radius: 3px;
         display: block;
@@ -77,9 +77,9 @@ button.header__toggle {
                     var(--bar-spacer)
             );
         }
-    }
+    }*/
 
-    .nav-is-active & {
+   /* .nav-is-active & {
         span {
             top: calc(50% - var(--bar-height) / 2);
             &:nth-child(1) {
@@ -92,7 +92,7 @@ button.header__toggle {
                 transform: rotate(-45deg);
             }
         }
-    }
+    }*/
     @media screen and (min-width: $breakpoint-xs) {
         display: none;
     }
@@ -107,7 +107,7 @@ button.header__toggle {
     top: 0;
     left: 0;
     display: flex;
-    z-index: -1;
+    z-index: 0;
     transition: all 0.4s $ease-out-expo;
     transform: translateX(100%) translateY(-100%);
     overflow: hidden;
@@ -119,7 +119,7 @@ button.header__toggle {
         width: auto;
         padding: 0;
         display: block;
-        z-index: -1;
+        z-index: 0;
     }
 
     .nav-is-active & {
