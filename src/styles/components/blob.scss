@@ -22,12 +22,13 @@
     background-image: url(../../assets/images/blob-page-projets.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -3;
 }
 
 .blob-a-propos {
@@ -39,7 +40,7 @@
     bottom: 0px;
     left: -200px;
 
-    z-index: -1;
+    z-index: -3;
 }
 
 .blob-contact {
@@ -51,7 +52,7 @@
     bottom: 0px;
     left: 0;
 
-    z-index: -1;
+    z-index: -3;
 }
 
 .blob-contact {
@@ -63,7 +64,7 @@
     bottom: 0px;
     left: 0;
 
-    z-index: -1;
+    z-index: -3;
 }
 
 .blob-page-single {
@@ -75,5 +76,5 @@
     bottom: 0px;
     left: 0;
 
-    z-index: -1;
+    z-index: -3;
 }
