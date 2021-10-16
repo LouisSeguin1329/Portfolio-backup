@@ -1,5 +1,3 @@
-
-
 button {
     background: var(--color-degrader);
     border: none;
@@ -11,9 +9,8 @@ button {
     text-transform: uppercase;
     position: relative;
     cursor: pointer;
-    font-family:  'Manrope', sans-serif;;
+    font-family: 'Manrope', sans-serif;
 
-    
     .coinBtn {
         position: absolute;
         top: 5px;
@@ -24,7 +21,3 @@ button {
 header button.header__toggle {
     background: transparent;
 }
-
-
-
-

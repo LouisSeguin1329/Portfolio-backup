@@ -31,17 +31,20 @@
             text-transform: uppercase;
             position: relative;
             cursor: pointer;
-        
+
             .coinBtn {
                 position: absolute;
                 top: 5px;
                 right: 2px;
             }
-        @media screen and (max-width: $breakpoint-xs) {
-            font-size: 10px;
-            padding: 15px 20px;
-        }
-        
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: 15px;
+                padding: 20px 25px;
+            }
+            @media screen and (max-width: $breakpoint-xxs) {
+                font-size: 10px;
+                padding: 15px 20px;
+            }
         }
     }
 
@@ -65,7 +68,128 @@
     }
 }
 
+@media screen and (max-width: $breakpoint-lg) {
+    .hero .wrapper h1,
+    h1 {
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+
+    .hero .wrapper h2,
+    h2 {
+        font-size: 40px;
+
+        text-align: center;
+    }
+
+    .hero {
+        .champi1 {
+            background-size: 70%;
+            max-width: 50%;
+            max-height: 200px;
+            top: 650px;
+            z-index: -1;
+        }
+        .champi2 {
+            background-size: 100%;
+            max-width: 120px;
+            max-height: 200px;
+
+            right: 0px;
+            top: 600px;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .hero {
+        .champi1 {
+            background-size: 70%;
+            max-width: 50%;
+            max-height: 200px;
+            top: 650px;
+            z-index: -1;
+        }
+        .champi2 {
+            background-size: 100%;
+            max-width: 120px;
+            max-height: 200px;
+
+            right: 0px;
+            top: 600px;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .hero .wrapper h1,
+    h1 {
+        font-size: 65px;
+        margin-bottom: 0;
+    }
+
+    .hero .wrapper h2,
+    h2 {
+        font-size: 35px;
+
+        text-align: center;
+    }
+    .hero {
+        .champi1 {
+            background-size: 70%;
+            max-width: 50%;
+            max-height: 200px;
+            top: 650px;
+            z-index: -1;
+        }
+        .champi2 {
+            background-size: 100%;
+            max-width: 120px;
+            max-height: 200px;
+
+            right: 0px;
+            top: 600px;
+            z-index: -1;
+        }
+    }
+}
+
 @media screen and (max-width: $breakpoint-xs) {
+    .hero .wrapper h1,
+    h1 {
+        font-size: 40px;
+    }
+
+    .hero .wrapper h2,
+    h2 {
+        font-size: 24px;
+        max-width: 283px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .hero {
+        .champi1 {
+            background-size: 50%;
+            max-width: 50%;
+            max-height: 170px;
+            top: 650px;
+            z-index: -1;
+        }
+        .champi2 {
+            background-size: 100%;
+            max-width: 97px;
+            max-height: 150px;
+
+            top: 600px;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-xxs) {
     .hero .wrapper h1,
     h1 {
         font-size: 36px;
@@ -83,14 +207,14 @@
         .champi1 {
             background-size: 50%;
             max-width: 50%;
-            max-height: 155px;
+            max-height: 165px;
             top: 650px;
             z-index: -1;
         }
         .champi2 {
             background-size: 100%;
             max-width: 97px;
-            max-height:150px;
+            max-height: 150px;
 
             top: 600px;
             z-index: -1;

@@ -2,11 +2,20 @@
     background-image: url(../../assets/images/blob-accueil.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -5px;
+    top: 0px;
     z-index: -5;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        background-image: url(../../assets/images/blob-accueil-768.png);
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        background-image: url(../../assets/images/blob-accueil-mobile.png);
+    }
 }
 
 .blob-page-projet {
@@ -67,12 +76,4 @@
     left: 0;
 
     z-index: -1;
-}
-
-
-@media screen and (max-width: $breakpoint-xs) {
-    .blob-accueil {
-        background-image: url(../../assets/images/blob-accueil-mobile.png);
-        
-    }
 }
