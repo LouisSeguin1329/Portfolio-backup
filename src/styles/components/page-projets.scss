@@ -2,6 +2,15 @@
     width: 100vw;
 }
 
+.wrapper-page-projets {
+    margin: 0 69px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin: 0 40px;
+    }
+}
+
+
 .mes-projets {
     height: 100%;
     position: relative;
@@ -30,7 +39,7 @@
             margin: 15px 0;
         }
         @media screen and (max-width: $breakpoint-xs) {
-            font-size: 12px;
+            font-size: 15px;
         }
     }
 
@@ -52,7 +61,7 @@
             object-fit: contain;
 
             @media screen and (max-width: $breakpoint-sm) {
-                width: 60%;
+                width: 55%;
             }
         }
 
@@ -66,7 +75,7 @@
                 align-items: center;
                 justify-content: center;
 
-                margin-left: 50px;
+                margin-left: 45px;
             }
 
             @media screen and (max-width: $breakpoint-xs) {
@@ -104,6 +113,8 @@
                     @media screen and (max-width: $breakpoint-sm) {
                         font-size: 35px;
                         text-align: center;
+                        margin-right: 0;
+                        padding-right: 0;
           
 
                          border-right: none;
@@ -129,6 +140,7 @@
 
                 @media screen and (max-width: $breakpoint-sm) {
                     font-size: 20px;
+                    text-align: center;
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {
@@ -161,7 +173,7 @@
 
     .le-projet-droite {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         margin-top: 150px;
 
         @media screen and (max-width: $breakpoint-xs) {
@@ -177,7 +189,7 @@
             }
 
             @media screen and (max-width: $breakpoint-sm) {
-                width: 60%;
+                width: 55%;
             }
         }
 
@@ -191,6 +203,8 @@
              @media screen and (max-width: $breakpoint-sm) {
                  align-items: center;
                  justify-content: center;
+
+                 margin-right: 45px;
              }
 
             @media screen and (max-width: $breakpoint-xs) {
@@ -225,6 +239,8 @@
                     @media screen and (max-width: $breakpoint-sm) {
                         font-size: 35px;
                         text-align: center;
+                        margin-right: 0;
+                        padding-right: 0;
 
                         border-right: none;
                         border-bottom: solid 3px black;
@@ -250,6 +266,7 @@
 
                 @media screen and (max-width: $breakpoint-sm) {
                     font-size: 20px;
+                    text-align: center;
                 }
                 @media screen and (max-width: $breakpoint-xs) {
                     font-size: 14px;
@@ -291,6 +308,15 @@
             background-size: 70%;
             height: 250px;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            top: 1600px;
+            background-size: 55%;
+          height: 250px;
+          background-position: 50%;
+            left: -45px;
+            
+        }
     }
     .champi2 {
         background-image: url(../../assets/images/Champignon2.svg);
@@ -307,6 +333,15 @@
             background-size: 80%;
             height: 250px;
             right: -20px;
+            background-position: 50%;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            top: 1000px;
+            background-size: 70%;
+            height: 250px;
+            right: -25px;
+            background-position: 50%;
         }
     }
     .champi3 {
@@ -323,6 +358,12 @@
         @media screen and (max-width: $breakpoint-lg) {
             bottom: 100px;
             background-size: 70%;
+            height: 250px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            bottom: 450px;
+            background-size: 55%;
             height: 250px;
         }
     }
@@ -343,9 +384,15 @@
             height: 250px;
             left: -35px;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            bottom: 1100px;
+            background-size: 70%;
+            height: 250px;
+            left: -25px;
+            background-position: 50%;
+                
+        }
     }
 }
 
-.wrapper-page-projets {
-    margin: 0 69px;
-}
