@@ -16,11 +16,29 @@
 
             h2 {
                 margin-bottom: 15px;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    font-size: 50px;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: 38px;
+                }
             }
 
             p.bio {
                 margin-top: 0;
                 max-width: 740px;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    font-size: 28px;
+
+                    max-width: 650px;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: 20px;
+
+                    max-width: 380px;
+                }
             }
 
             .qualite1 {
@@ -38,6 +56,16 @@
             position: absolute;
             top: 0;
             right: -150px;
+            max-height: 800px;
+
+            z-index: -1;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                max-width: 680px;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                max-width: 480px;
+            }
         }
     }
 
@@ -46,6 +74,18 @@
         max-width: 1030px;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            max-width: 900px;
+
+            img {
+                max-width: 60px;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            margin-top: 80px;
+        }
     }
 
     .mes-loisirs {
@@ -72,6 +112,12 @@
         position: absolute;
         bottom: 0;
         right: 300px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            background-size: 100%;
+            width: 300px;
+            height: 288px;
+        }
     }
 
     .shroom2 {
@@ -82,5 +128,12 @@
         position: absolute;
         bottom: 0;
         right: -140px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            background-size: 100%;
+            width: 300px;
+            height: 440px;
+            right: -120px;
+        }
     }
 }
