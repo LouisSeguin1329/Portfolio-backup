@@ -6,6 +6,16 @@
 .a-propos-wrapper {
     margin: 0 140px;
 
+    @media screen and (max-width: $breakpoint-md) {
+        margin: 0 120px;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        margin: 0 100px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        margin: 0 50px;
+    }
+
     .introduction {
         position: relative;
         display: flex;
@@ -13,6 +23,10 @@
         .txt-intro {
             padding-top: 150px;
             max-width: 748px;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                padding-top: 175px;
+            }
 
             h2 {
                 margin-bottom: 15px;
@@ -22,6 +36,15 @@
                 }
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: 38px;
+                }
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: 30px;
+                    text-align: left;
+                }
+                @media screen and (max-width: $breakpoint-xs) {
+                    font-size: 20px;
+                    text-align: left;
+                    max-width: 200px;
                 }
             }
 
@@ -38,6 +61,17 @@
                     font-size: 20px;
 
                     max-width: 380px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: 18px;
+
+                    max-width: 350px;
+                }
+                @media screen and (max-width: $breakpoint-xs) {
+                    font-size: 16px;
+
+                    max-width: 280px;
                 }
             }
 
@@ -66,6 +100,27 @@
             @media screen and (max-width: $breakpoint-md) {
                 max-width: 480px;
             }
+            @media screen and (max-width: $breakpoint-sm) {
+                top: 70px;
+                max-width: 350px;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+                top: 70px;
+                max-width: 200px;
+                right: -50px;
+            }
+            @media screen and (max-width: $breakpoint-xxs) {
+                top: 70px;
+                max-width: 165px;
+                right: -50px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        h4 {
+            font-size: 18px;
+            margin: 10px 0;
         }
     }
 
@@ -86,6 +141,26 @@
         @media screen and (max-width: $breakpoint-md) {
             margin-top: 80px;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            max-width: 900px;
+
+            img {
+                max-width: 45px;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            max-width: 900px;
+
+            margin-top: 30px;
+
+            flex-direction: column;
+
+            img {
+                max-width: 30px;
+            }
+        }
     }
 
     .mes-loisirs {
@@ -100,6 +175,14 @@
 
             .loisirs {
                 font-size: var(--font-size-h4);
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            .liste-loisirs {
+                .loisirs {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -118,6 +201,24 @@
             width: 300px;
             height: 288px;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 250px;
+            height: 240px;
+            right: 200px;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 200px;
+            height: 192px;
+            right: 150px;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 150px;
+            height: 145px;
+            right: 150px;
+        }
     }
 
     .shroom2 {
@@ -134,6 +235,25 @@
             width: 300px;
             height: 440px;
             right: -120px;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            right: -80px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 250px;
+            height: 360px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 200px;
+            height: 290px;
+            right: -40px;
+        }
+        @media screen and (max-width: $breakpoint-xxs) {
+            width: 150px;
+            height: 200px;
+            right: -40px;
         }
     }
 }

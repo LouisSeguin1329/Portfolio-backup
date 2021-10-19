@@ -29,8 +29,6 @@
     top: 0;
     left: 0;
     z-index: -3;
-
-    
 }
 
 .blob-a-propos {
@@ -43,6 +41,11 @@
     left: -200px;
 
     z-index: -3;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        background-size: 70%;
+        height: 500px;
+    }
 }
 
 .blob-contact {
