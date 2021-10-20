@@ -10,7 +10,6 @@
     }
 }
 
-
 .mes-projets {
     height: 100%;
     position: relative;
@@ -43,8 +42,7 @@
         }
     }
 
-
-////PROJET GAUCHE
+    ////PROJET GAUCHE
     .le-projet-gauche {
         display: flex;
         justify-content: left;
@@ -70,7 +68,6 @@
             display: flex;
             flex-direction: column;
 
-                
             @media screen and (max-width: $breakpoint-sm) {
                 align-items: center;
                 justify-content: center;
@@ -115,9 +112,8 @@
                         text-align: center;
                         margin-right: 0;
                         padding-right: 0;
-          
 
-                         border-right: none;
+                        border-right: none;
                         border-bottom: solid 3px black;
                     }
 
@@ -128,11 +124,10 @@
                     }
                 }
                 @media screen and (max-width: $breakpoint-lg) {
-                .martine{
-                    max-width: 300px;
+                    .martine {
+                        max-width: 300px;
+                    }
                 }
-
-            }
             }
 
             h4 {
@@ -169,7 +164,7 @@
         }
     }
 
-////PROJET DROITE
+    ////PROJET DROITE
 
     .le-projet-droite {
         display: flex;
@@ -194,24 +189,22 @@
         }
 
         .textProjets {
-             margin-right: 65px;
-        
-             display: flex;
-             flex-direction: column;
- 
-                 
-             @media screen and (max-width: $breakpoint-sm) {
-                 align-items: center;
-                 justify-content: center;
+            margin-right: 65px;
 
-                 margin-right: 45px;
-             }
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                align-items: center;
+                justify-content: center;
+
+                margin-right: 45px;
+            }
 
             @media screen and (max-width: $breakpoint-xs) {
                 order: 2;
                 margin-right: 0;
             }
-           
 
             .titre-projets {
                 display: flex;
@@ -253,12 +246,11 @@
                     }
                 }
 
-                
                 @media screen and (max-width: $breakpoint-lg) {
-                .pinball{
-                    max-width: 425px;
+                    .pinball {
+                        max-width: 425px;
+                    }
                 }
-            }
             }
 
             h4 {
@@ -312,10 +304,9 @@
         @media screen and (max-width: $breakpoint-sm) {
             top: 1600px;
             background-size: 55%;
-          height: 250px;
-          background-position: 50%;
+            height: 250px;
+            background-position: 50%;
             left: -45px;
-            
         }
     }
     .champi2 {
@@ -385,14 +376,19 @@
             left: -35px;
         }
 
+        @media screen and (max-width: $breakpoint-md) {
+            bottom: 422px;
+            background-size: 80%;
+            height: 213px;
+            left: -35px;
+        }
+
         @media screen and (max-width: $breakpoint-sm) {
             bottom: 1100px;
             background-size: 70%;
             height: 250px;
             left: -25px;
             background-position: 50%;
-                
         }
     }
 }
-

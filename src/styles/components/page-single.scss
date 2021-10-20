@@ -1,21 +1,46 @@
 .section-single-projet {
     position: relative;
     padding-top: 100px;
+
     .wrapper-single {
         margin: 0 65px;
 
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
+        overflow-y: hidden;
+
+        @media screen and (max-width: $breakpoint-xs) {
+            margin: 0 35px;
+        }
 
         h1 {
             text-align: center;
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: $breakpoint-xxs) {
+                font-size: 30px;
+            }
         }
 
         .intro-single {
             display: flex;
 
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column;
+            }
+
             .video {
                 width: 50vw;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 100%;
+                }
             }
 
             .model-3d {
@@ -25,64 +50,170 @@
             .txt-intro {
                 margin-left: 50px;
                 width: 50vw;
-                .competences-utilise {
-                    max-width: 675px;
-                    display: flex;
-                    justify-content: space-between;
 
-                    .logiciel {
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 50px;
+                }
+
+                h4 {
+                    margin: 0;
+                }
+                p {
+                    margin: 15px 0;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: 25px;
+                    }
+                    @media screen and (max-width: $breakpoint-xs) {
+                        font-size: 20px;
+                    }
+                }
+                .comptetence-asset {
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        flex-direction: column;
+                    }
+
+                    .competences-utilise {
+                        max-width: 675px;
                         display: flex;
                         justify-content: space-between;
 
-                        .un-logiciel {
+                        @media screen and (max-width: $breakpoint-sm) {
+                            justify-content: flex-start;
+                        }
+                        @media screen and (max-width: $breakpoint-xs) {
+                        }
+
+                        .logiciel {
                             display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            margin-right: 20px;
+                            justify-content: space-between;
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                justify-content: space-between;
+                            }
+
+                            .un-logiciel {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 20px;
+
+                                @media screen and (max-width: $breakpoint-sm) {
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+
+                        .langage-utilise {
+                            @media screen and (max-width: $breakpoint-sm) {
+                                margin: 0 44px;
+                            }
+                            @media screen and (max-width: $breakpoint-xs) {
+                                margin: 0;
+                            }
+
+                            .langage {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                            }
                         }
                     }
 
-                    .langage {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                    h3 {
+                        margin: 15px 0 0 0;
+                        @media screen and (max-width: $breakpoint-md) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .titre-langue {
+                        @media screen and (max-width: $breakpoint-md) {
+                            text-align: center;
+                        }
+                    }
+                    .credit-asset {
+                        @media screen and (max-width: $breakpoint-md) {
+                            line-height: 85%;
+                        }
+                        .txt-asset {
+                            font-size: 18px;
+                        }
                     }
                 }
 
-                h3 {
-                    margin: 15px 0 0 0;
-                }
+                p.titre-competence {
+                    font-size: 24px;
+                    margin: 5px 0;
 
-                .txt-asset {
-                    font-size: 18px;
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: 18px;
+                        margin-bottom: auto;
+                        text-align: center;
+                    }
                 }
+                .logo-competences {
+                    max-width: 55px;
 
-                p {
-                    margin: 15px 0;
+                    @media screen and (max-width: $breakpoint-md) {
+                        max-width: 45px;
+                        margin-top: 10px;
+                    }
                 }
             }
 
-            p.titre-competence {
-                font-size: 24px;
-                margin: 5px 0;
-            }
-            .logo-competences {
-                max-width: 55px;
+            .asset-utilise {
+                @media screen and (max-width: $breakpoint-md) {
+                    max-width: 200px;
+                }
             }
         }
-
         .description-projet {
             margin: 0 auto;
             max-width: 1233px;
+
             .txt-description-projet {
                 font-size: 24px;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: 18px;
+                }
+                @media screen and (max-width: $breakpoint-xs) {
+                    font-size: 16px;
+                }
             }
 
             .gras {
                 font-weight: 700;
             }
+        }
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: left;
+
+        @media screen and (max-width: $breakpoint-xs) {
+            max-width: none;
+            font-size: 20px;
+        }
+    }
+
+    .img-first {
+        .txt-section-single {
+            order: 2;
+        }
+        .img-single-section {
+            order: 1;
         }
     }
 
@@ -93,12 +224,44 @@
 
         padding: 100px 0;
 
-        li {
-            font-size: 24px;
+        @media screen and (max-width: $breakpoint-xs) {
+            flex-direction: column;
+            padding-bottom: 0;
         }
 
+        ul {
+            padding-left: 15px;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                margin: 15px 0;
+            }
+
+            li {
+                font-size: 24px;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: 16px;
+                }
+            }
+        }
         .img-single-section {
             max-width: 990px;
+
+            @media screen and (max-width: $breakpoint-md) {
+                max-width: 70%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                max-width: 65%;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                max-width: 100%;
+            }
         }
 
         .txt-section-single {
@@ -117,6 +280,21 @@
         position: absolute;
         top: 2200px;
         left: 0;
+        z-index: -1;
+
+        @media screen and (max-width: $breakpoint-md) {
+            width: 190px;
+            height: 325px;
+            top: 2479px;
+            background-size: 80%;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            background-size: 70%;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            background-size: 50%;
+            top: 2509px;
+        }
     }
     .champi2 {
         background-image: url(../../assets/images/Champignon2.svg);
@@ -126,6 +304,23 @@
         position: absolute;
         top: 1200px;
         right: 0;
+        z-index: -1;
+
+        @media screen and (max-width: $breakpoint-md) {
+            top: 1097px;
+            right: -35px;
+            background-size: 80%;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            top: 1097px;
+            right: -52px;
+            background-size: 70%;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            top: 900px;
+            right: -81px;
+            background-size: 50%;
+        }
     }
     .champi3 {
         background-image: url(../../assets/images/Champignon1.svg);
@@ -136,6 +331,23 @@
         bottom: 1000px;
         right: 0;
         transform: scaleX(-1);
+        z-index: -1;
+
+        @media screen and (max-width: $breakpoint-md) {
+            bottom: 651px;
+            background-size: 80%;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            bottom: 488px;
+            background-size: 70%;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            bottom: 462px;
+            background-size: 50%;
+        }
+        @media screen and (max-width: $breakpoint-xxs) {
+            bottom: 393px;
+        }
     }
     .champi4 {
         background-image: url(../../assets/images/Champignon2.svg);
@@ -146,5 +358,22 @@
         bottom: 0;
         left: 0;
         transform: scaleX(-1);
+        z-index: -1;
+
+        @media screen and (max-width: $breakpoint-md) {
+            bottom: 0;
+            background-size: 80%;
+            left: -35px;
+            height: 210px;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            background-size: 70%;
+            left: -52px;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            background-size: 50%;
+            left: -84px;
+            height: 133px;
+        }
     }
 }
