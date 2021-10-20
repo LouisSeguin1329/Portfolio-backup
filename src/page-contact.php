@@ -73,7 +73,7 @@
                                         $mailFrom = $_POST['email'];
                                         $comment = $_POST['comment'];
 
-                                        $mailTo = "info@louisseguin.ca";
+                                        $mailTo = "info@louisseguin.com";
                                         $headers = "From: ".$mailFrom;
                                         $txt = $comment;
 
@@ -158,7 +158,8 @@
                                                 required
                                             ></textarea>
                                         </div>
-                                        <button
+                                   
+                                    </fieldset>     <button
                                             type="submit"
                                             name="submit"
                                             class="btn-form"
@@ -170,7 +171,6 @@
                                                 alt=""
                                             />
                                         </button>
-                                    </fieldset>
                                 </div>
                             </form> 
                             <?php endif;?>

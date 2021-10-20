@@ -26,6 +26,11 @@
             margin: 0 35px;
         }
 
+        .form_body {
+            display: flex;
+            flex-direction: column;
+        }
+
         form {
             fieldset {
                 display: flex;
@@ -105,13 +110,26 @@
                         max-height: 200px;
                     }
                 }
+            }
+        }
+        .btn-form {
+            //  margin-top: 20px;
+            text-align: center;
+            max-width: 122px;
+            align-self: center;
+        }
 
-                .btn-form {
-                    //  margin-top: 20px;
-                    text-align: center;
-                    max-width: 122px;
-                    align-self: center;
-                }
+        /*
+    Erroe
+    ========================================================================*/
+
+        .error {
+            .input_element {
+                box-shadow: inset 0 0 0 3px var(--color-fail);
+            }
+
+            .input_label {
+                color: red /* var(--color-fail) */;
             }
         }
 
