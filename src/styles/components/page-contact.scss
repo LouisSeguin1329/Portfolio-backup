@@ -9,6 +9,7 @@
         }
     }
     overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 
     .contenu-contact {
@@ -168,15 +169,15 @@
         @media screen and (max-width: $breakpoint-md) {
             background-size: 50%;
         }
-        @media screen and (max-width: $breakpoint-xs) {
-            background-size: 25%;
-            height: 86px;
-            top: 170px;
-        }
         @media screen and (max-width: 1335px) {
             background-size: 65%;
             height: 276px;
             top: 112px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            background-size: 25%;
+            height: 86px;
+            top: 170px;
         }
     }
     .champi2 {
@@ -200,6 +201,11 @@
             background-position: 50%;
             right: -29px;
             top: 672px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            background-size: 35%;
+
+            right: -52px;
         }
     }
 }
