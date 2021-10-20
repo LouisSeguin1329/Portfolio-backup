@@ -35,6 +35,10 @@
                 flex-direction: column;
             }
 
+            iframe {
+                width: 100%;
+            }
+
             .video {
                 width: 50vw;
 
@@ -45,6 +49,10 @@
 
             .model-3d {
                 width: 50vw;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 100%;
+                }
             }
 
             .txt-intro {
@@ -73,7 +81,7 @@
                 .comptetence-asset {
                     @media screen and (max-width: $breakpoint-sm) {
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-around;
                     }
 
                     @media screen and (max-width: $breakpoint-xs) {
