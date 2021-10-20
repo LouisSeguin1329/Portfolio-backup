@@ -61,6 +61,37 @@
                     <h1>Contact</h1>
 
                     <div class="contenu-contact">
+                    
+                    <?php
+                            $message_sent = false;
+
+                                if(isset($_POST['submit']) && $_POST['email'] != '' && $_POST['fullname'] != '' && $_POST['comment'] != '') {
+
+                                    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                                        $name = $_POST['fullname'];
+                                        $subject ="Vous avez reçu un courriel de ".$name.";
+                                        $mailFrom = $_POST['email'];
+                                        $comment = $_POST['comment'];
+
+                                        $mailTo = "info@louisseguin.ca";
+                                        $headers = "From: ".$mailFrom;
+                                        $txt = $comment;
+
+
+                                        mail($mailTo, $subject, $txt, $headers);
+
+                                        $message_sent = true;
+                                    }
+                                }
+                        ?>
+
+                        <?php 
+                        if($message_sent):
+                        ?>
+                        <h3>Merci!</h3>
+                        <?php 
+                        else:
+                        ?>
                         <div class="form">
                             <form
                                 action="page-contact.php"
@@ -141,8 +172,11 @@
                                         </button>
                                     </fieldset>
                                 </div>
-                            </form>
+                            </form> 
+                            <?php endif;?>
                         </div>
+                       
+
                         <div class="mes-reseaux-sociaux">
                             <div class="rs">
                                 <img

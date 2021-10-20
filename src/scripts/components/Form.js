@@ -21,13 +21,12 @@ export default class Form {
   }
 
   onSubmit(event) {
-    event.preventDefault();
-
     if (this.validate()) {
       console.log('success');
       this.showConfirmation();
     } else {
       console.log('fail');
+      event.preventDefault();
     }
   }
 
