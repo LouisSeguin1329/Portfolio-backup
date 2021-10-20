@@ -53,23 +53,20 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
     position: absolute;
     bottom: 0px;
     left: 0;
 
     z-index: -3;
-}
 
-.blob-contact {
-    background-image: url(../../assets/images/blob-contact.png);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-
-    z-index: -3;
+    @media screen and (max-width: $breakpoint-sm) {
+        background-image: url(../../assets/images/blob-contact-tablet.png);
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        background-image: url(../../assets/images/blob-contact-mobile.png);
+    }
 }
 
 .blob-page-single {
