@@ -16,32 +16,40 @@
 }*/
 
 .sectBlobAccueil {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     top: 0;
+    z-index: -5;
 }
 
 .blob-accueil-1 {
     position: absolute;
-    width: 500px;
-    height: 500px;
-    background: #fff;
-    left: 0;
-    svg {
+    width: 1200px;
+    height: 1000px;
+
+    left: -500px;
+    bottom: -200px;
+    /*  svg {
         filter: invert(53%) sepia(62%) saturate(3943%) hue-rotate(161deg)
             brightness(95%) contrast(101%);
-    }
+    }*/
 }
-
+path.one {
+    fill: url(#MyGradient);
+    opacity: 50%;
+}
 .blob-accueil-2 {
     position: absolute;
 
     width: 500px;
     height: 500px;
-    background: #fff;
+
+    right: 0;
+
     svg {
         filter: invert(40%) sepia(65%) saturate(836%) hue-rotate(215deg)
             brightness(99%) contrast(95%);
