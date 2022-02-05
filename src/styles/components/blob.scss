@@ -38,22 +38,26 @@
             brightness(95%) contrast(101%);
     }*/
 }
-path.one {
-    fill: url(#MyGradient);
+path.blob1 {
+    fill: url(#blob-accueil1);
     opacity: 50%;
 }
 .blob-accueil-2 {
     position: absolute;
 
-    width: 500px;
-    height: 500px;
+    width: 1800px;
+    height: 1800px;
 
-    right: 0;
+    right: -1000px;
 
-    svg {
+    /*  svg {
         filter: invert(40%) sepia(65%) saturate(836%) hue-rotate(215deg)
             brightness(99%) contrast(95%);
-    }
+    } */
+}
+path.blob2 {
+    fill: url(#blob-accueil2);
+    opacity: 50%;
 }
 
 /*
