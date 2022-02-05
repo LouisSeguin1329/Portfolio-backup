@@ -14,6 +14,41 @@
         }
     }
 }*/
+
+.sectBlobAccueil {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    top: 0;
+}
+
+.blob-accueil-1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    left: 0;
+    svg {
+        filter: invert(53%) sepia(62%) saturate(3943%) hue-rotate(161deg)
+            brightness(95%) contrast(101%);
+    }
+}
+
+.blob-accueil-2 {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    svg {
+        filter: invert(40%) sepia(65%) saturate(836%) hue-rotate(215deg)
+            brightness(99%) contrast(95%);
+    }
+}
+
+/*
 .row-outer {
     top: 0;
     z-index: -5;
@@ -58,7 +93,7 @@
         border-radius: 25% 75% 50% 50% / 25% 50% 69% 43%;
     }
 }
-
+*/
 .blob-page-projet {
     background-image: url(../../assets/images/blob-page-projets.png);
     background-repeat: no-repeat;
